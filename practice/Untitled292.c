@@ -1,0 +1,50 @@
+#include<stdio.h>
+void main()
+{
+	int arr[3][3],i,j,k,l,temp;
+	printf("enter arr\n");
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			scanf("%d",&arr[i][j]);
+		}
+	}
+	printf("\nprintf\n");
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			printf("%d\t",arr[i][j]);
+		}
+		printf("\n");
+	}
+	printf("\nreverse\n");
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			for(k=0;k<3;k++)
+			{
+				for(l=0;l<3;l++)
+				{
+					if(arr[i][j]>arr[k][l])
+					{
+						temp=arr[i][j];
+						arr[i][j]=arr[k][l];
+						arr[k][l]=temp;
+					}
+				}
+			}
+		}
+	}
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			printf("%d\t",arr[i][j]);
+		}
+		printf("\n");
+	}
+	
+}

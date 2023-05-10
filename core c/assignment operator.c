@@ -1,0 +1,10 @@
+#include<stdio.h>
+void main()
+{
+	int a=10;
+	a+=2;
+	printf("a=%d\n",a);
+	a-=5;
+	printf("a=%d\n",a);
+	
+}

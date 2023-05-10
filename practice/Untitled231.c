@@ -1,0 +1,49 @@
+#include<stdio.h>
+void main()
+{
+	int n1[3][3],n2[3][3],n3[3][3],i,j;
+	printf("enter first array\n");
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			scanf("%d",&n1[i][j]);
+		}
+	}
+	printf("first\n");
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			printf("%d\t",n1[i][j]);
+		}
+		printf("\n");
+	}
+		printf("enter second array\n");
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			scanf("%d",&n2[i][j]);
+		}
+	}
+	printf("second\n");
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			printf("%d\t",n2[i][j]);
+		}
+		printf("\n");
+	}
+	printf("sum\n");
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			n3[i][j]=n1[i][j]*n2[j][i];
+			printf("%d\t",n3[i][j]);
+		}
+		printf("\n");
+	}
+}
